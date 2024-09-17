@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi Kaushik's Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2, h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            color: #2980b9;
+        }
+        .contact-info, .links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info p, .links a {
+            margin: 5px 0;
+            color: #34495e;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-content {
+            margin-top: 10px;
+        }
+        .section-content ul {
+            list-style-type: circle;
+        }
+        .skills, .publications, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .skills ul, .publications ul, .projects ul {
+            width: 48%;
+        }
+        .skills ul li, .publications ul li, .projects ul li {
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rishi Kaushik</h1>
+
+        <div class="contact-info">
+            <p>Email: <a href="mailto:rishikaushik60@gmail.com">rishikaushik60@gmail.com</a></p>
+            <p>Phone: +1 929-370-6735</p>
+            <p>GitHub: <a href="https://github.com/Rishi-kaushik" target="_blank">github.com/Rishi-kaushik</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="section-content">
+                <ul>
+                    <li><strong>NYU, Tandon School of Engineering</strong> – Masters, Computer Science (Sept 2024 - Present)</li>
+                    <li><strong>Thapar Institute of Engineering and Technology</strong> – Bachelor of Engineering in Electronics and Computers, CGPA: 8.18 (July 2016 - June 2020)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills section-content">
+                <ul>
+                    <li><strong>Languages:</strong> Python, C/C++, Java, Bash</li>
+                </ul>
+                <ul>
+                    <li><strong>Technologies:</strong> Tensorflow, OpenCV, Keras, OpenAI Gym, CMake, GoogleTest, Pandas, Scikit-learn, Numpy, Matplotlib</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Experience</h2>
+
+            <h3>Qualcomm Hyderabad</h3>
+            <p><strong>Software Engineer</strong> (Feb 2022 - July 2024)</p>
+            <div class="section-content">
+                <ul>
+                    <li>Developed support for the 'Artificial Intelligence Processor' (AIP) backend in SNPE (C++)</li>
+                    <li>Added unit and end-to-end tests using the GoogleTest framework for maintainability</li>
+                    <li>Implemented CMake build flags to enable or disable the AIP backend conditionally</li>
+                    <li>Triaged and fixed customer-reported and release candidate failures (Jira)</li>
+                </ul>
+
+                <h4>Layer Wise Accuracy Analyzer (Internal Tooling)</h4>
+                <ul>
+                    <li>Purposed and developed a CLI tool in Python to analyze layer-to-layer inference accuracy of models</li>
+                    <li>Generated a consolidated spreadsheet report on accuracy degradation between layers</li>
+                </ul>
+            </div>
+
+            <h3>Samsung R&D Noida</h3>
+            <p><strong>Software Engineer</strong> (Aug 2020 - Jan 2022)</p>
+            <div class="section-content">
+                <ul>
+                    <li>Purposed and developed a camera app feature to remove flicker from slow-motion video in indoor lighting</li>
+                    <li>Developed flicker removal algorithm and POC in Python using OpenCV</li>
+                    <li>Coordinated with the camera team to initiate final implementation</li>
+                </ul>
+
+                <h4>Dynamic-Workout Detection in Galaxy Watch (Deployed in Watch 3)</h4>
+                <ul>
+                    <li>Developed a classifier to detect dynamic workouts using the device’s accelerometer with +95% accuracy</li>
+                    <li>Implemented a pipeline to preprocess, analyze, and clean data</li>
+                    <li>Implemented the final solution in C, fitting within 5KB of embedded memory and achieving 3ms inference time</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Publications</h2>
+            <div class="publications section-content">
+                <ul>
+                    <li><strong>Dynamic Workout Detection in Smart Watch using Artificial Neural Network (2021):</strong> Research paper selected in IEEE 2021, Las Vegas, NV, USA. <a href="https://ieeexplore.ieee.org/document/9427735" target="_blank">Read more</a></li>
+                </ul>
+                <ul>
+                    <li><strong>Method And Apparatus for Removing Flicker in A Video, Samsung Electronics, South Korea (2023):</strong> Patent for a software-based solution to remove flicker from slow-motion video in artificial light. <a href="https://patents.justia.com/patent/20230199322" target="_blank">View patent</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Passion Projects</h2>
+            <div class="projects section-content">
+                <ul>
+                    <li><strong>AI Board Game Agent with Reinforcement Learning Self-Play (Python):</strong> Developed a 2-player Tic-tac-toe Gym environment and trained an RL agent through self-play</li>
+                </ul>
+                <ul>
+                    <li><strong>Othello Board Game Engine (Java):</strong> Implemented the game of Othello with game tree search and pruning optimizations to play against the player</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Rishi Kaushik | <a href="mailto:rishikaushik60@gmail.com">Contact Me</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
